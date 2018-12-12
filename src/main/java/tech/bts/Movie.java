@@ -25,4 +25,16 @@ public class Movie {
     public boolean isAdult() {
         return adult;
     }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setLength(Double length) {
+        this.length = length;
+    }
+
+    public void setAdult(boolean adult) {
+        this.adult = adult;
+    }
 }

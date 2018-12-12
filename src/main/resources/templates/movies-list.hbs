@@ -1,0 +1,21 @@
+<h1>Movies</h1>
+<ul>
+   {{#each movies}}
+       <li>
+           <a href="/movies/{{title}}">{{title}}</a>, {{length}} min,
+            {{#if adult}}
+                for adults.
+            {{else}}
+                for all audiences.
+            {{/if}}
+       </li>
+   {{/each}}
+</ul>
+
+<form action="/movies/add" method="post">
+    Title: <input type="text" name="title">
+    Length: <input type="number" name="length">
+    For adults: <input type="checkbox" name="adult">
+    <button>Add movie</button>
+</form>
+
