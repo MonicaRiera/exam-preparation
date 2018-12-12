@@ -1,7 +1,9 @@
-package tech.bts;
+package tech.bts.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import tech.bts.Model.Movie;
+import tech.bts.Repository.MovieRepository;
 
 import java.util.List;
 

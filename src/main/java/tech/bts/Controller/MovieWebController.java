@@ -1,13 +1,14 @@
-package tech.bts;
+package tech.bts.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
+import tech.bts.Util.HandlebarsUtil;
+import tech.bts.Model.Movie;
+import tech.bts.Service.MovieService;
 
 import javax.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
-import java.util.List;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -35,14 +36,6 @@ public class MovieWebController {
         Map<String, Object> values = new HashMap<>();
         values.put("movie", movie);
         return HandlebarsUtil.getTemplate("movie-detail", values);
-        /**String result = "<h1>" + movie.getTitle() + "</h1> <p>" + movie.getLength() + " min, ";
-        if (movie.isAdult()) {
-            result += "for adults</p>";
-        } else {
-            result += "for all audiences</p>";
-        }
-
-        return result;*/
     }
 
     @RequestMapping(method = RequestMethod.POST, path = "/add")

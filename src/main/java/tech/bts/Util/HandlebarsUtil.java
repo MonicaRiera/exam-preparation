@@ -1,4 +1,4 @@
-package tech.bts;
+package tech.bts.Util;
 
 import com.github.jknack.handlebars.Handlebars;
 import com.github.jknack.handlebars.io.ClassPathTemplateLoader;

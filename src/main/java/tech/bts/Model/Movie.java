@@ -1,4 +1,4 @@
-package tech.bts;
+package tech.bts.Model;
 
 public class Movie {
 

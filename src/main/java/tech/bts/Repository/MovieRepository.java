@@ -1,6 +1,7 @@
-package tech.bts;
+package tech.bts.Repository;
 
 import org.springframework.stereotype.Repository;
+import tech.bts.Model.Movie;
 
 import java.util.ArrayList;
 import java.util.HashMap;
